@@ -3,81 +3,247 @@
   left: 30vw;
   position: absolute;
   z-index: 0;
+  animation: body 4s;
 }
 /* 躯干 */
-.man_body {
-  width: 150px;
-  height: 150px;
+.man-body {
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   position: relative;
+  background-color: #971203;
+  z-index: 0;
 }
-.body_clothes {
+.body-clothes {
   background-color: #fff;
   position: absolute;
   top: 10px;
-  z-index: -1;
 }
 
 
 /* 头部 */
-.man_head {
-  width: 85px;
-  height: 65px;
+.man-head {
+  width: 90px;
+  height: 70px;
   border-radius: 50%;
-  left: 65px;
+  left: 90px;
   top: -20px;
   position: absolute;
+  z-index: 0;
 }
 
-
-/* 相连节点 */
-.limb_nodes {
-  width: 25px;
-  height: 25px;
-  left: 10px;
-  top: 6px;
-  border-radius: 50%;
-  position: absolute;
-}
 
 /* 手臂 */
-.man_arms_m {
-  width: 80px;
-  height: 13px;
-  border-radius: 10px;
-  left: 10px;
-  top: 6px;
+.arm-right {
   position: absolute;
+  top: 60px;
+  left: 60px;
+  z-index: 1;
 }
-.man_arms_m_right {
-  top: 50px;
-  left: 20px;
-  transform: rotate(70deg);
-  /* animation: animate_arams_right 1s; */
-}
-.man_arms_left {
-  width: 150px;
-  height: 13px;
-  border-radius: 10px;
-  left: 40px;
-  top: 90px;
+.arm-left {
   position: absolute;
-  transform: rotate(50deg);
+  top: 60px;
+  left: 130px;
   z-index: -1;
 }
-.man_arms_hand {
-  width: 25px;
-  height: 25px;
+.arm-section {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #f54936;
+  border: 3px solid #f54936;
+  border-radius: 50%;
+  bottom: 97px;
+  left: -3px;
+  transform-origin: center 112px;
+}
+.arm-section::before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 70px;
+  background-color: #f54936;
+  top: 25px;
+  left: 4px;
+  border-radius: 12px;
+}
+
+/* 双腿 */
+.foot-right {
+  position: absolute;
+  top: 170px;
+  left: 25px;
+  z-index: 1;
+}
+.foot-left {
+  position: absolute;
+  top: 170px;
+  left: 90px;
+  z-index: -1;
+}
+.foot-section {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #f54936;
+  border: 3px solid #f54936;
+  border-radius: 50%;
+  bottom: 97px;
+  left: -3px;
+  transform-origin: center 112px;
+}
+.foot-section::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 50px;
+  background-color: #f54936;
+  top: 25px;
+  left: 4px;
+  border-radius: 12px;
+}
+
+
+
+.arm-section-1 {
+  transform: rotate(200deg);
+  animation: arm1 4s;
+  z-index: -1;
+}
+.arm-section-2 {
+  background-color: transparent;
+  border-color: transparent;
+  transform: rotate(-100deg);
+  animation: arm2 4s;
+  z-index: -1;
+}
+.arm-section-3 {
+  transform: rotate(200deg);
+  animation: arm1 4s;
+  z-index: -1;
+}
+.arm-section-4 {
+  background-color: transparent;
+  border-color: transparent;
+  transform: rotate(-100deg);
+  animation: arm2 4s;
+  z-index: -1;
+}
+.hand {
+  transform: rotate(30deg);
+  transform-origin: center 10px;
+  animation: hand 4s;
+  position: absolute;
+  z-index: -1;
+}
+.hand::after {
+  content: '';
+  width: 8px;
+  height: 370px;
+  background-color: #c3c4c8;
+  border-radius: 8px;
+  position: absolute;
+  top: -50px;
+  left: 5px;
+  z-index: -1;
+}
+.handKit {
+  width: 20px;
+  height: 20px;
+  background-color: #ffd0a4;
+  border: 3px solid #ffd0a4;
   border-radius: 50%;
   position: absolute;
-  right: -20px;
-  top: -6px;
+  left: -5px;
+  top: -10px;
+}
+.kit {
+  width: 26px;
+  height: 8px;
+  background-color: #c3c4c8;
+  border-radius: 8px;
+  position: absolute;
+  left: -4px;
+  top: 300px;
+}
+.arm-section-5 {
+  transform: rotate(120deg);
+  animation: foot1 4s;
+}
+.arm-section-6 {
+  background-color: transparent;
+  border-color: transparent;
+  transform: rotate(100deg);
+  animation: foot2 4s;
+}
+.arm-section-7 {
+  transform: rotate(120deg);
+  animation: foot1 4s;
+}
+.arm-section-8 {
+  background-color: transparent;
+  border-color: transparent;
+  transform: rotate(100deg);
+  animation: foot2 4s;
+}
+.shots {
+  width: 25px;
+  height: 30px;
+  background-color: #101314;
+  transform: rotate(-20deg);
+  position: absolute;
+  left: -6px;
+}
+
+
+
+@keyframes body {
+  0% {transform: translateY(0);}
+  25% {transform: translateY(-90px);}
+  50% {transform: translateY(0);}
+  100% {transform: translateY(0);}
+}
+@keyframes arm1 {
+  0% {transform: rotate(200deg);}
+  25% {transform: rotate(70deg);}
+  50% {transform: rotate(240deg);}
+  70% {transform: rotate(200deg);}
+  100% {transform: rotate(200deg);}
+}
+@keyframes arm2 {
+  0% {transform: rotate(-100deg);}
+  25% {transform: rotate(-60deg);}
+  50% {transform: rotate(-40deg);}
+  70% {transform: rotate(-120deg);}
+  100% {transform: rotate(-100deg);}
+}
+@keyframes hand {
+  0% {transform: rotate(30deg);}
+  25% {transform: rotate(-70deg);}
+  50% {transform: rotate(-10deg);}
+  75% {transform: rotate(20deg);}
+  100% {transform: rotate(30deg);}
+}
+
+@keyframes foot1 {
+  0% {transform: rotate(120deg);}
+  25% {transform: rotate(150deg);}
+  50% {transform: rotate(120deg);}
+  70% {transform: rotate(120deg);}
+  100% {transform: rotate(120deg);}
+}
+@keyframes foot2 {
+  0% {transform: rotate(100deg);}
+  25% {transform: rotate(50deg);}
+  50% {transform: rotate(100deg);}
+  70% {transform: rotate(100deg);}
+  100% {transform: rotate(100deg);}
 }
 
 
 
 /* 双腿 */
-.man_foots {
+.man-foots {
   width: 120px;
   height: 10px;
   left: 40px;
@@ -98,7 +264,7 @@
 
 
 /* 动画 */
-@keyframes animate_arams_right {
+@keyframes animate-arams-right {
   0% {transform: rotate(0 deg) translate(100 px) rotate(0 deg);}
   25% {transform: rotate(90deg);}
   50% {transform: rotate(120deg);}

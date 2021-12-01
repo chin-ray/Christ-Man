@@ -1,32 +1,32 @@
 /* 帽子 */
-.color_cap {
-  background-color: #f54936;
+.color-cap {
+  background-color: #971203;
 }
 /* 衣服 */
-.color_clothes {
-  background-color: #a02f23;
+.color-clothes {
+  background-color: #971203;
 }
 /* 四肢 */
-.color_limb {
-  background-color: #f54936da;
+.color-limb {
+  background-color: #f54936;
 }
 /* 皮肤 */
-.color_skin {
+.color-skin {
   background-color: #ffd0a4;
 }
 /* 背包 */
-.color_package {
+.color-package {
   background-color: #006c57;
 }
 /* 滑雪板 */
-.color_ski {
+.color-ski {
   background-color: #c3c4c8;
 }
 /* 滑雪杆 */
-.color_skiPole {
+.color-skiPole {
   background-color: #c3c4c8;
 }
 /* 鞋子 */
-.color_shoes {
+.color-shoes {
   background-color: #101314;
 }
