@@ -1,0 +1,19 @@
+/* 背包 */
+.package {
+  width: 160px;
+  height: 30px;
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  background-color: #a19f94;
+}
+/* 背包带子 */
+.package_tape {
+  width: 160px;
+  height: 30px;
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  background-color: #ffd500;
+  transform: rotate(55deg);
+}

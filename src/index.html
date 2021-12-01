@@ -1,72 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Christ-Man</title>
+    <link rel="stylesheet" href="./color.css" />
+    <link rel="stylesheet" href="./man.css" />
+    <link rel="stylesheet" href="./package.css" />
     <style type="text/css">
-        body {
-            margin: 0;
-            padding: 0;
-        }
-        .wrap {
-            width: 100vw;
-            height: 100vh;
-            background-color: antiquewhite;
-        }
-        .man {
-            top: 40vh;
-            left: 30vw;
-            position: absolute;
-        }
-        .man_body {
-            width: 150px;
-            height: 150px;
-            background-color: red;
-            border-radius: 50%;
-            position: relative;
-        }
-        .man_head {
-            width: 50px;
-            height: 50px;
-            background-color: yellow;
-            left: 50px;
-            top: -50px;
-            position: absolute;
-        }
-        .man_arms {
-            width: 150px;
-            height: 10px;
-            background-color: sandybrown;
-            left: 20px;
-            top: 100px;
-            position: absolute;
-            transform: rotate(60deg);
-        }
-        .man_foots {
-            width: 120px;
-            height: 10px;
-            background-color: tan;
-            left: 40px;
-            top: 180px;
-            position: absolute;
-            transform: rotate(50deg);
-        }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .wrap {
+        width: 100vw;
+        height: 100vh;
+        background-color: antiquewhite;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrap">
-        <div class="man">
-            <div class="man_body">
-                <div class="man_head"></div>
-                <div class="man_arms"></div>
-                <div class="man_foots">
-                    
-                </div>
+      <div class="man">
+        <div class="man_body color_clothes">
+          <div class="man_head color_skin"></div>
+          <div class="limb_nodes color_skin">
+            <div class="man_arms_m man_arms_m_right color_limb">
+              <div class="man_arms_hand color_skin"></div>
             </div>
-
+          </div>
+          <div class="man_arms_left color_limb">
+            <div class="man_arms_hand color_skin"></div>
+          </div>
+          <!-- <div class="man_foots"></div> -->
         </div>
+        <div class="man_body body_clothes"></div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

@@ -1,0 +1,32 @@
+/* 帽子 */
+.color_cap {
+  background-color: #f54936;
+}
+/* 衣服 */
+.color_clothes {
+  background-color: #a02f23;
+}
+/* 四肢 */
+.color_limb {
+  background-color: #f54936da;
+}
+/* 皮肤 */
+.color_skin {
+  background-color: #ffd0a4;
+}
+/* 背包 */
+.color_package {
+  background-color: #006c57;
+}
+/* 滑雪板 */
+.color_ski {
+  background-color: #c3c4c8;
+}
+/* 滑雪杆 */
+.color_skiPole {
+  background-color: #c3c4c8;
+}
+/* 鞋子 */
+.color_shoes {
+  background-color: #101314;
+}

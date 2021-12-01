@@ -1,0 +1,107 @@
+.man {
+  top: 40vh;
+  left: 30vw;
+  position: absolute;
+  z-index: 0;
+}
+/* 躯干 */
+.man_body {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: relative;
+}
+.body_clothes {
+  background-color: #fff;
+  position: absolute;
+  top: 10px;
+  z-index: -1;
+}
+
+
+/* 头部 */
+.man_head {
+  width: 85px;
+  height: 65px;
+  border-radius: 50%;
+  left: 65px;
+  top: -20px;
+  position: absolute;
+}
+
+
+/* 相连节点 */
+.limb_nodes {
+  width: 25px;
+  height: 25px;
+  left: 10px;
+  top: 6px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+/* 手臂 */
+.man_arms_m {
+  width: 80px;
+  height: 13px;
+  border-radius: 10px;
+  left: 10px;
+  top: 6px;
+  position: absolute;
+}
+.man_arms_m_right {
+  top: 50px;
+  left: 20px;
+  transform: rotate(70deg);
+  /* animation: animate_arams_right 1s; */
+}
+.man_arms_left {
+  width: 150px;
+  height: 13px;
+  border-radius: 10px;
+  left: 40px;
+  top: 90px;
+  position: absolute;
+  transform: rotate(50deg);
+  z-index: -1;
+}
+.man_arms_hand {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  right: -20px;
+  top: -6px;
+}
+
+
+
+/* 双腿 */
+.man_foots {
+  width: 120px;
+  height: 10px;
+  left: 40px;
+  top: 180px;
+  position: absolute;
+  transform: rotate(50deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 动画 */
+@keyframes animate_arams_right {
+  0% {transform: rotate(0 deg) translate(100 px) rotate(0 deg);}
+  25% {transform: rotate(90deg);}
+  50% {transform: rotate(120deg);}
+  75% {transform: rotate(150deg);}
+  100% {transform: rotate(180deg);}
+}
